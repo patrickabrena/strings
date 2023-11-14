@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Strings</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="strings.js" defer></script>
+  </head>
+  <body>
+  <div class="container">
+
+
+
+    <div class="intro-blurb">
+      <h1>JavaScript Strings</h1>
+      <br>
+      <h3>
+        This is an example of embedded Javascript -->
+        <span id="embedded-js"></span>
+      </h2>
+      <h3>
+        You can use the same technique to join two variables together like this:
+        <span id="joint"></span>
+      </h3>
+      
+    </div>
+    <!--intro-blurb-->
+
+  <div class="development-view">
+    <h3>Development View:</h3>
+    <img class="images" src="../strings/images/top-embedded-js.png" alt="development view top">
+      
+    <img class="images" src="../strings/images/bottom-embedded-js.png" alt="development view bottom">
+  </div><!--"developmen-view"-->
+
+    <div class="concatenation-blurb">
+      <h3>Joining strings together is called concatenation</h3>
+      <h3>Concatenation in action</h3>
+    </div>
+
+
+    <div class="concatenation-examples">
+      <h3>Concatenation in Context</h3>
+      <button id="btn_1">Press Me !</button>
+      <div id="press-me-1" data-visible="false">
+      <h3 id="conc-context-output">
+      </h3>
+      <pre class="code-text">//embedded js in string concatenation example//
+
+const button_1 = document.querySelector("#btn_1");
+let concat_in_context = 
+document.getElementById("press-me-1");
+        
+function greet() {
+const name_btn = 
+prompt("What is your name?");
+
+const greeting_btn = 
+document.querySelector("#conc-context-output");
+
+greeting_btn.textContent = 
+`Hello ${name_btn}, nice to meet you!!`;
+}
+        </pre>
+      </div>
+      <h3>Concatenation vs Template Literals</h3>
+      
+      <button id="btn_2">Press Me !</button>
+      
+      <div id="press-me-2" data-visible="false">
+        <pre class="code-text">
+          //string concatenation//
+
+          const name_con = "Chris";
+          const greeting_con = "Hello";
+          console.log(greeting_con + " , " + name_con);</pre
+        >
+        <pre class="code-text">
+          //template literals//
+          
+          const name_tem = "John";
+          const greeting_tem = "Hello";
+          console.log(`${name_tem}, ${greeting_tem}`);</pre
+        >
+      </div>
+      <!--press-me-2-->
+    </div>
+    <!--"concatenation-examples">-->
+
+
+    <div class="expressions-strings">
+      <h3>Including expressions in strings</h3>
+      <h3>You can include JavaScript expressions in template literals, as well as just variables, and the results will be included in the results</h3>
+    </div>
+    <!--expression-strings-->
+
+
+    <div class="expressions-strings-example">
+      <h3>Expressions in strings examples</h3>
+      <button id="btn_3">Press Me !</button>
+      <div id="press-me-3" data-visible="false">
+        <pre class="code-text">
+          //Expressions in Strings//
+
+const song = "Camden Arc - 'I Don't Wanna Fall in Love'";
+const score = 9.6;
+const highestScore = 10;
+const output = ` The song, ${song} slaps. I give it ${
+  (score / highestScore) * 100
+}%`;
+console.log(output);
+        </pre>
+      </div>
+    </div><!--expressions-strings-example-->
+
+    <div class="multiline-strings">
+      <h3>Multiline Strings</h3>
+      <h3>Template literals respect the line breaks in the source code, so you can wirte strings that span mulitple lines like this:</h3>
+    </div><!--"multiline-strings"-->
+    <div class="multiline-strings-example">
+      <h3>Multiline Strings Example</h3>
+      <button id="btn_4">Press Me !</button>
+      <div id="press-me-4" data-visible="false">
+        
+        <pre class="code-text">
+          //Multiline String//
+
+const newline = `One day you finally knew 
+what you had to do, and began,`;
+console.log(newline);
+        </pre>
+      </div><!--press-me-4-->
+    </div><!--"multiline-strings"-->
+
+    <div class="numbers-vs-strings">
+      <h3>Numbers vs Strings</h3>
+      <h3>What happens when we try to concatenate a string and a number? Let's try it in our console:</h3>
+    </div><!--"numbers-vs-strings"-->
+
+    <div class="numbers-vs-strings-example">
+      <h3>Numbers vs Strings Example</h3>
+      <button id="btn_5">Press Me !</button>
+      <div id="press-me-5" data-visible="false">
+      <pre class="code-text">
+        //Numbers vs Strings
+        
+        const name_NvS = "Front ";
+        const number_NvS = 242;
+        console.log(name_NvS + number_NvS);
+
+      </pre>
+      </div><!--"press-me-5"-->  
+    </div><!--numbers-vs-strings-examples-->
+
+    <div class="numbers-vs-strings-more-text">
+      <h3>You might expect this to return an error, but it works just fine. 
+        How numbers should be displayed as strings is fairly well-defined, 
+        so the browser automaticlally converts the number to a string and concatenates the two strings.
+      </h3>
+      <h3>If you have a numeric variable that you want to convert to a string, or a string 
+        variable that you want to convert to a number, you can use the following two constructs:
+      </h3>
+    </div><!--"numbers-vs-strings-more-text"-->
+
+
+
+
+  </div><!--container-->
+  </body>
+</html>

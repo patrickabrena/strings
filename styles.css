@@ -1,0 +1,136 @@
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url(../strings/images/tim-mossholder-ShmRLyRv-S0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+body {
+  display: grid;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  border: solid rgb(31, 159, 144) 3px;
+  padding: 2rem 2rem;
+  background-color: rgb(220, 229, 238, 0.4);
+  backdrop-filter: blur(2px);
+}
+.container > * {
+  padding: 1rem 1rem;
+  margin-bottom: 1.5rem;
+}
+img {
+  display: flex;
+  scale: 1;
+  width: 100%;
+}
+h3 span {
+  background-color: rgb(31, 159, 144);
+  color: whitesmoke;
+
+  font-style: italic;
+}
+.intro-blurb,
+.development-view,
+.expressions-strings,
+.multiline-strings-example,
+.numbers-vs-strings-more-text {
+  color: hsl(47, 100%, 84%);
+  padding: 0rem 1rem;
+}
+.container .concatenation-blurb,
+.container .expressions-strings-example,
+.container .numbers-vs-strings {
+  /* background-color: rgb(220, 229, 238); */
+  background-color: hsl(47, 100%, 84%);
+  color: black;
+}
+.container .concatenation-examples,
+.container .multiline-strings,
+.container .numbers-vs-strings-example {
+  background-color: rgb(31, 159, 144);
+  color: whitesmoke;
+}
+button {
+  margin-right: 1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 16px;
+  background-color: black;
+  /* color: rgb(105, 228, 212); */
+  color: whitesmoke;
+  border-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* #btn_3 {
+  
+  background-color: rgb(31, 159, 144);
+  color: hsl(47, 100%, 84%);
+} */
+
+#conc-context-output {
+  width: 100%;
+  height: 2rem;
+  /* padding-left: 1rem; */
+}
+
+#press-me-2,
+#press-me-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#press-me-2 > * {
+  flex: 1;
+}
+#press-me-2[data-visible="false"],
+#press-me-5[data-visible="false"],
+#press-me-4[data-visible="false"],
+#press-me-1[data-visible="false"],
+#press-me-3[data-visible="false"] {
+  opacity: 0%;
+}
+.code-text {
+  display: block;
+}
+/*beginning of media queries*/
+@media screen and (min-width: 500px) {
+  .container {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 499px) {
+  body .container img {
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.3rem;
+  }
+  body .container .development-view {
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  .container {
+    width: 375px;
+    padding: 0.3rem 0.3rem;
+  }
+  .container > * {
+    padding: 1rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .code-text {
+    font-size: 0.7rem;
+  }
+}
