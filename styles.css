@@ -123,7 +123,7 @@ button {
     margin-bottom: 1.5rem;
   }
   .container {
-    width: 375px;
+    width: 345px;
     padding: 0.3rem 0.3rem;
   }
   .container > * {
@@ -131,6 +131,6 @@ button {
     margin-bottom: 1.5rem;
   }
   .code-text {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
   }
 }
