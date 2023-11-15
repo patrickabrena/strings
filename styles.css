@@ -24,6 +24,8 @@ h1 {
   justify-content: center;
 }
 .container {
+  align-items: center;
+  justify-content: center;
   border: solid rgb(31, 159, 144) 3px;
   padding: 2rem 2rem;
   background-color: rgb(220, 229, 238, 0.4);
@@ -107,7 +109,22 @@ button {
   display: block;
 }
 /*beginning of media queries*/
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 120%;
+  }
+  .container {
+    /* width: 500px; */
+    position: relative;
+    width: 70%;
+    left: 12.5%;
+  }
+
+  img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 799px) {
   .container {
     width: 500px;
   }
@@ -118,6 +135,7 @@ button {
     width: 100%;
     padding-bottom: 0.3rem;
   }
+
   body .container .development-view {
     padding: 0;
     margin-bottom: 1.5rem;
@@ -131,6 +149,6 @@ button {
     margin-bottom: 1.5rem;
   }
   .code-text {
-    font-size: 0.65rem;
+    font-size: 0.62rem;
   }
 }
