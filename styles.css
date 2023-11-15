@@ -56,7 +56,8 @@ h3 span {
 }
 .container .concatenation-blurb,
 .container .expressions-strings-example,
-.container .numbers-vs-strings {
+.container .numbers-vs-strings,
+.numbers-vs-strings-example-2 {
   /* background-color: rgb(220, 229, 238); */
   background-color: hsl(47, 100%, 84%);
   color: black;
@@ -102,7 +103,9 @@ button {
 #press-me-5[data-visible="false"],
 #press-me-4[data-visible="false"],
 #press-me-1[data-visible="false"],
-#press-me-3[data-visible="false"] {
+#press-me-3[data-visible="false"],
+#press-me-6[data-visible="false"],
+#press-me-7[data-visible="false"] {
   opacity: 0%;
 }
 .code-text {

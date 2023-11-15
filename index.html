@@ -31,7 +31,7 @@
     <h3>Development View:</h3>
     <img class="images" src="../strings/images/top-embedded-js.png" alt="development view top">
       
-    <img class="images" src="../strings/images/bottom-embedded-js.png" alt="development view bottom">
+    <img class="images" src="../strings/images/js-embedded-bottom.png" alt="development view bottom">
   </div><!--"developmen-view"-->
 
     <div class="concatenation-blurb">
@@ -162,6 +162,33 @@ console.log(newline);
         variable that you want to convert to a number, you can use the following two constructs:
       </h3>
     </div><!--"numbers-vs-strings-more-text"-->
+
+    <div class="numbers-vs-strings-example-2">
+      <h3>The <span>Number()</span> function converts anything passed to it into a
+      number, if it can. Try the following:</h3>
+      <button id="btn_6">Press Me !</button>
+      <div id="press-me-6" data-visible="false">
+        <pre class="code-text">
+    //Number() function//
+    const myString = "123";
+    const myNum = Number(myString);
+    console.log(typeof myNum);
+    const button_6 = document.querySelector("btn_6");
+        </pre>
+         
+      </div><!--"press-me-6"-->
+      <h3>Conversely, the <span>String()</span> function converts its argument to a string.</h3>
+      <button id="btn_7">Press Me !</button>
+      <div id="press-me-7" data-visible="false">
+        <pre class="code-text">
+          const myNum2 = "123";
+const myString2 = String(myNum2);
+console.log(typeof myString2);
+const button_7 = document.querySelector("#btn_7");
+              </pre>
+      
+      </div><!--"press-me-7"-->
+    </div><!--"numbers-vs-strings-example-2"-->
 
 
 

@@ -111,7 +111,7 @@ button_4.addEventListener("click", () => {
   }
 });
 
-//Numbers vs Strings
+//Numbers vs Strings//
 const name_NvS = "Front ";
 const number_NvS = 242;
 console.log(name_NvS + number_NvS);
@@ -127,5 +127,40 @@ button_5.addEventListener("click", () => {
   } else if (visibility === "true") {
     numbers_vs_strings_example.setAttribute("data-visible", false);
     numbers_vs_strings_code_text.style.opacity = "100%";
+  }
+});
+
+//Number() function//
+const myString = "123";
+const myNum = Number(myString);
+console.log(typeof myNum);
+const button_6 = document.querySelector("#btn_6");
+button_6.addEventListener("click", () => {
+  let myString_example = document.getElementById("press-me-6");
+  let myString_code_text = document.getElementsByClassName("code-text");
+  let visibility = myString_example.getAttribute("data-visible");
+  if (visibility === "false") {
+    myString_example.setAttribute("data-visible", true);
+    myString_code_text.style.opacity = "0%";
+  } else if (visibility === "true") {
+    myString_example.setAttribute("data-visible", false);
+    myString_code_text.style.opacity = "100%";
+  }
+});
+
+const myNum2 = "123";
+const myString2 = String(myNum2);
+console.log(typeof myString2);
+const button_7 = document.querySelector("#btn_7");
+button_7.addEventListener("click", () => {
+  let myString_example2 = document.getElementById("press-me-7");
+  let myString_code_text2 = document.getElementsByClassName("code-text");
+  let visibility = myString_example2.getAttribute("data-visible");
+  if (visibility === "false") {
+    myString_example2.setAttribute("data-visible", true);
+    myString_code_text2.style.opacity = "0%";
+  } else if (visibility === "true") {
+    myString_example2.setAttribute("data-visible", false);
+    myString_code_text2.style.opacity = "100%";
   }
 });
